@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/tv_toolBar_activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_toolbar_sign_up_activity_name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_toolBar_back"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_navigate_before_black_36dp"/>
+        <Button
+            android:id="@+id/btn_toolbar_logout"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/ic_power_settings_new_black_36dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+</LinearLayout>

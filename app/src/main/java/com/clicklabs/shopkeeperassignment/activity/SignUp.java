@@ -112,6 +112,7 @@ public class SignUp extends BaseActivity implements View.OnClickListener {
         {
             Intent intent = new Intent(SignUp.this, LogIn.class);
             startActivity(intent);
+            //merge
 
         }
 
@@ -175,9 +176,9 @@ public class SignUp extends BaseActivity implements View.OnClickListener {
 
     }
 
-    @SuppressWarnings("deprecation")
+
     private void animationForLayoutBackground() {
-        ColorDrawable[] color = {new ColorDrawable(getResources().getColor(R.color.colorBackgroundSignUpInitial)), new ColorDrawable(getResources().getColor(R.color.colorBackgroundSignUp))};
+        ColorDrawable[] color = {new ColorDrawable(ContextCompat.getColor(getApplicationContext(), R.color.colorBackgroundSignUpInitial)), new ColorDrawable(ContextCompat.getColor(getApplicationContext(), R.color.colorBackgroundSignUp))};
         TransitionDrawable trans = new TransitionDrawable(color);
         linearLayout.setBackgroundDrawable(trans);
         for (int i = 0; i <= 10; i++) {
@@ -270,7 +271,7 @@ public class SignUp extends BaseActivity implements View.OnClickListener {
             isValid = true;
         } else {
 
-            Drawable drawableOutlineWhiteBounded = getResources().getDrawable(R.drawable.ic_error_outline_white_24dp);
+            Drawable drawableOutlineWhiteBounded = ContextCompat.getDrawable(getApplicationContext(),R.drawable.ic_error_outline_white_24dp);
             assert drawableOutlineWhiteBounded != null;
             drawableOutlineWhiteBounded.setBounds(0, 0,
                     drawableOutlineWhiteBounded.getIntrinsicWidth(), drawableOutlineWhiteBounded.getIntrinsicHeight());

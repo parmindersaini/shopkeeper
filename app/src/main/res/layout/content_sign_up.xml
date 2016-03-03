@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/holo_blue_light"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SignUp"
+    tools:showIn="@layout/activity_sign_up">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textHintColor">
+
+        <EditText
+            android:id="@+id/et_sign_up_username"
+            style="@style/default_edit_text_style"
+            android:drawableLeft="@drawable/ic_person_outline_white_24dp"
+            android:hint="@string/et_sign_up_username_hint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textHintColor">
+
+        <EditText
+            android:id="@+id/et_sign_up_phone"
+            style="@style/default_edit_text_style"
+            android:drawableLeft="@drawable/ic_phone_white_24dp"
+            android:hint="@string/tv_label_sign_up_phone"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textHintColor">
+
+        <EditText
+            android:id="@+id/et_sign_up_email"
+            style="@style/default_edit_text_style"
+            android:drawableLeft="@drawable/ic_mail_outline_white_24dp"
+            android:hint="@string/et_hint_sign_up_email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/textHintColor">
+
+        <EditText
+            android:id="@+id/et_sign_up_password"
+            style="@style/default_edit_text_style"
+            android:layout_marginBottom="40dp"
+            android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+            android:drawableRight="@drawable/ic_visibility_off_white_24dp"
+            android:hint="@string/et_hint_sign_up_password"
+            android:inputType="numberPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_sign_up_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/selector_for_button"
+        android:text="@string/btn_text_sign_up_done"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tv_label_already_registered"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/edt_text_size_default" />
+
+    <TextView
+        android:id="@+id/tv_btn_sign_up_log_in"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/tv_label_sign_up_activity_log_in"
+        android:textColor="#FCDC3B"
+        android:textSize="@dimen/edt_text_size_default"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></View>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/iv_sign_up_logo"
+        android:contentDescription="@string/cd_iv_splash_screen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/random_splash"/>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FEFCFF</color>
+    <color name="colorBackgroundSignUp">#4682B4</color>
+    <color name ="textHintColor">#FEFCFF</color>
+    <color name="colorBackgroundSignUpInitial">#BDB76B</color>
+    <color name="colorTextActivated">#FCDC3B</color>
+</resources>
